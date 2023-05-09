@@ -15,7 +15,7 @@ resource "aws_vpc" "vpc_terraform" {
 resource "aws_internet_gateway" "igw_terraform" {
   vpc_id = aws_vpc.vpc_terraform.id
 
-  tags = merge(var.tags, { "Name" = "igw-openVPN" })
+  tags = merge(var.tags, { "Name" = "igw-openVPNTeste" })
 }
 
 resource "aws_route_table" "public_rt_table" {
